@@ -1,11 +1,5 @@
 # netlify.toml
 
-[build]
-  # Directory where the built project will be stored
-  publish = "build"
-  # Command to build the project
-  command = "npm run build"
-
 [dev]
   # Port for the development server
   port = 8888
