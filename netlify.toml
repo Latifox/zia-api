@@ -1,0 +1,23 @@
+# netlify.toml
+
+[build]
+  # Directory where the built project will be stored
+  publish = "build"
+  # Command to build the project
+  command = "npm run build"
+
+[dev]
+  # Port for the development server
+  port = 8888
+  # Command to run the local development server
+  command = "npm start"
+
+[functions]
+  # Directory where Netlify functions are stored
+  directory = "netlify/functions"
+
+[[redirects]]
+  # Redirect all requests to the index.html for single-page applications (SPA)
+  from = "/*"
+  to = "/index.html"
+  status = 200
